@@ -1,7 +1,7 @@
 # hexo-theme-beep
 A simple theme based on NexT-Gemini for hexo. 一款基于NexT-Gemini主题设计的hexo主题。
 
-[README](https://github.com/lewky/lewky.github.io/blob/dev/README.md) | [中文文档](https://github.com/lewky/lewky.github.io/blob/dev/README_zh.md)
+[README](https://github.com/lewky/lewky.github.io/blob/dev/README.md) | [中文文档](https://github.com/lewky/hexo-theme-beep/blob/master/README_zh.md)
 
 这是我的hexo主题代码仓库，你可以通过 :zap: https://lewky.github.io/ 来访问我的博客主题。
 
