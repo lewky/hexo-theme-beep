@@ -1,27 +1,22 @@
 # hexo-theme-beep
 A simple theme based on NexT-Gemini for hexo. 一款基于NexT-Gemini主题设计的hexo主题。
 
-# lewky.github.io
 [README](https://github.com/lewky/lewky.github.io/blob/dev/README.md) | [中文文档](https://github.com/lewky/lewky.github.io/blob/dev/README_zh.md)
 
-It's a repository for my hexo blog and you can access my blog by :zap: https://lewky.github.io/
+It's a repository for my hexo theme and you can access my theme by :zap: https://lewky.github.io/
 
 ![blog_display](https://raw.githubusercontent.com/lewky/markdownImages/master/resource/blog/blog_display.jpg)
 
-There are two branch in this repository :
-* master
-* dev
-
-**master** branch is deployed by github pages;  
-**dev** branch is an empty hexo blog with my own custom NexT theme. 
-
-You can clone dev branch to get my hexo blog without posts except hello-world.md.
+* You can clone master branch to get beep theme blog without posts except hello-world.md. Please see <a href="#Clone the whole blog repository with beep theme">#Clone the whole blog repository with beep theme</a>
+~~* You also can only clone `themes/beep` to get beep theme into your local blog repository. Please see <a href="#Clone beep theme into blog repository">#Clone beep theme into blog repository</a>~~
 
 ## How to play
 
+### Clone the whole blog repository with beep theme
+
 1. create a folder for your blog site and open `git bash` in this folder path, then clone dev branch:
 ```bash
-git clone -b dev https://github.com/lewky/lewky.github.io.git ./
+git clone -b master https://github.com/lewky/hexo-theme-beep ./
 ```
 
 2. install dependencies(please confirm you have installed Node.js, Git & Hexo in your computer, and it will spend much time on this step, please wait a minute):

@@ -1,22 +1,22 @@
-# lewky.github.io
+# hexo-theme-beep
+A simple theme based on NexT-Gemini for hexo. 一款基于NexT-Gemini主题设计的hexo主题。
+
 [README](https://github.com/lewky/lewky.github.io/blob/dev/README.md) | [中文文档](https://github.com/lewky/lewky.github.io/blob/dev/README_zh.md)
 
-这是我的hexo博客代码仓库，你可以通过 :zap: https://lewky.github.io/ 来访问我的博客。
+这是我的hexo主题代码仓库，你可以通过 :zap: https://lewky.github.io/ 来访问我的博客主题。
 
 ![blog_display](https://raw.githubusercontent.com/lewky/markdownImages/master/resource/blog/blog_display.jpg)
 
-本仓库存在两个分支：
-* master
-* dev
-
-**master** 分支用来部署 github pages;  
-**dev** 分支是使用了我自己定制的NexT主题的一个空的hexo博客，你可以通过克隆该dev分支来得到一个新的不包含任何文章(hello-world文章除外)的hexo博客。
+* 你可以通过克隆该master分支来得到一个新的不包含任何文章(hello-world文章除外)的beep主题博客。
+~~* 你也可以只克隆`themes\beep`文件到你的博客仓库来获取beep主题。~~
 
 ## 使用步骤
 
+### 克隆完整的beep主题博客
+
 1. 创建一个文件夹作为你的博客站点根目录，在该目录下打开 `git bash` 并使用下边的命令克隆dev分支：
 ```bash
-git clone -b dev https://github.com/lewky/lewky.github.io.git ./
+git clone -b master https://github.com/lewky/hexo-theme-beep ./
 ```
 
 2. 接着安装项目依赖(请确保已经安装了Node.js，Git和Hexo，另外该步骤会耗时较久，请耐心等待) :

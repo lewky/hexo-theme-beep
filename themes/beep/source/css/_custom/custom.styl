@@ -1,0 +1,812 @@
+// Custom styles.
+
+/* -----------start：头像相关---------- */
+
+/* 使用bilibili头像挂件时的头像 */
+.site-author-image-bilibili {
+    display: block;
+    margin-top: -132px;
+    margin-bottom: 30px;
+    padding: 0;
+    max-width: 94px;
+    height: auto;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+/* bilibili头像挂件 */
+.site-avatar-plug-bilibili {
+    position: relative;
+    display: block;
+    padding: 0;
+    max-width: 168px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 不使用头像挂件时的头像 */
+.site-author-image {
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    max-width: 120px;
+    height: auto;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+/* 头像旋转 */
+.site-author-image-bilibili {
+  /* 设置循环动画
+  [animation: 
+	(play)动画名称
+	(2s)动画播放时长单位秒或微秒
+	(ease-out)动画播放的速度曲线为以低速结束 
+	(1s)等待1秒然后开始动画
+	(1)动画播放次数(infinite为循环播放) ]*/
+ 
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transition: -webkit-transform 1.0s ease-out;
+  -moz-transition: -moz-transform 1.0s ease-out;
+  transition: transform 1.0s ease-out;
+}
+img:hover {
+  /* 鼠标经过停止头像旋转 
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;*/
+
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+/* Z 轴旋转动画 */
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+@-moz-keyframes play {
+  0% {
+    -moz-transform: rotateZ(0deg);
+  }
+  100% {
+    -moz-transform: rotateZ(-360deg);
+  }
+}
+@keyframes play {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+/* -----------end：头像相关---------- */
+
+
+/* -----------start：图片相关---------- */
+
+/* 去掉图片边框 */
+.posts-expand .post-body img {
+    border: none;
+    padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+    padding: 3px;
+}
+
+/* 背景图片透明度 */
+.backstretch {
+    opacity: .75;
+}
+
+/* -----------end：图片相关---------- */
+
+/* -----------start：页面头部相关---------- */
+
+/* GitHub Cornor */
+.github-corner :hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+@media (max-width: 991px) {
+  .github-corner >svg {
+    fill: #fff !important;
+    color: #222 !important;
+  }
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+/* -----------end：页面头部相关---------- */
+
+/* -----------start：页面底部相关---------- */
+
+/* 页面右下角的返回顶部按钮 */
+.footer + .back-to-top {
+    margin-right: 70px;
+    line-height: 1.5;
+    right: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    background-color: rgba(111, 66, 193, 0.78);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* 拉姆蕾姆回到顶部或底部按钮 */
+.sidebar_wo {
+    position:fixed;
+    line-height:0;
+    bottom:0;
+    z-index:1000
+}
+#leimu {
+    left:0;
+    -webkit-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+    -webkit-transform:translate(-7px,7px);
+    -ms-transform:translate(-7px,7px);
+    transform:translate(-7px,7px)
+}
+#lamu {
+    -webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;
+    -webkit-transform:translate(7px,7px);
+    -ms-transform:translate(7px,7px);
+    transform:translate(7px,7px);
+    right:0
+}
+#leimu:hover {
+    -webkit-transform:translate(0,0);
+    -ms-transform:translate(0,0);
+    transform:translate(0,0)
+}
+#lamu:hover {
+    -webkit-transform:translate(0,0);
+    -ms-transform:translate(0,0);
+    transform:translate(0,0)
+}
+.sidebar_wo img {
+    cursor:pointer;
+    /*opacity: 0.8;*/
+}
+@media only screen and (max-width:1024px) {
+    .sidebar_wo{display:none}
+}
+
+/* 消除Hosted by的超链底部线条 */
+.footer-custom a {
+    border-bottom: 0;
+}
+
+/* 页脚样式 */
+.footer-inner {
+    background-color: rgba(255,255,255,.75);
+    padding-left: 0;
+    color: #333;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #a166ab;
+    box-shadow: 0 -10px 10px 0 rgba(0,0,0,.15);
+}
+
+/* 页脚的爱心图形动画 */
+.with-love {
+    color: #ff71a8;
+    animation: heartAnimate 1.33s ease-in-out infinite;
+}
+@-moz-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1)
+  }
+  10%, 30% {
+    -webkit-transform:scale(.9);
+    -moz-transform:scale(.9);
+    -ms-transform:scale(.9);
+    -o-transform:scale(.9);
+    transform:scale(.9)
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+  50%, 70% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+}
+@-webkit-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1)
+  }
+  10%, 30% {
+    -webkit-transform:scale(.9);
+    -moz-transform:scale(.9);
+    -ms-transform:scale(.9);
+    -o-transform:scale(.9);
+    transform:scale(.9)
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+  50%, 70% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+}
+@-o-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1)
+  }
+  10%, 30% {
+    -webkit-transform:scale(.9);
+    -moz-transform:scale(.9);
+    -ms-transform:scale(.9);
+    -o-transform:scale(.9);
+    transform:scale(.9)
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+  50%, 70% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+}
+@keyframes heartAnimate{
+  0%, 100% {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1)
+  }
+  10%, 30% {
+    -webkit-transform:scale(.9);
+    -moz-transform:scale(.9);
+    -ms-transform:scale(.9);
+    -o-transform:scale(.9);
+    transform:scale(.9)
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+  50%, 70% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+}
+
+/* -----------end：页面底部相关---------- */
+
+
+/* -----------start：页面相关---------- */
+
+/* 鼠标样式 */
+:active {
+  cursor: url("/images/cursor/Diamond-Sword.cur"),auto!important;
+}
+a {
+  cursor: url("/images/cursor/Diamond-Pickaxe.cur"),auto!important;
+}
+
+/* 页面透明度 */
+.content-wrap, .sidebar {
+    opacity: .9 !important;
+}
+.header-inner {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 站点运行时间 */
+#days {
+    display: block;
+    color: rgb(7, 179, 155);
+    margin-top: 15px;
+}
+
+/* categories页面的样式 */
+.category-all-page ul li:nth-child(odd) {
+    list-style: square;
+}
+.category-all-page .category-list-child {
+    padding-left: 0;
+}
+.category-list-item .category-list-count {
+    color: #a02e2e;
+}
+.category-list-child .category-list-count {
+    color: #de8885;
+}
+.category-list-child .category-list-item {
+    list-style: none !important;
+    &::before {
+	content: "✦";
+        margin-right: 5px;
+    }
+}
+.category-list-item a:hover::after {
+    content: "☜";
+    margin-left: 5px;
+}
+
+/* -----------end：页面相关---------- */
+
+
+/* -----------start：站点标题---------- */
+
+/* 站点标题 */
+.site-title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    text-shadow: 5px 5px 3px rgba(47, 138, 216, 0.47);
+    color: #329edc;
+    &:hover {
+	webkit-background-clip: text;
+        -webkit-text-fill-color: #000;
+        -webkit-text-stroke: 1px #ddd;
+    }
+}
+
+/* -----------end：站点标题---------- */
+
+
+/* -----------start：菜单栏相关---------- */
+
+/* 菜单栏的图标 */
+.menu-item .fas,
+.menu-item .far,
+.menu-item .fab {
+    margin-right: 5px;
+}
+
+/* 消除菜单图标的右内间距 */
+.menu .menu-item .fa {
+    margin-right: 0;
+}
+
+/* 选中菜单时显示图标 */
+.menu-item-active a::after {
+    position: absolute;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f286";
+    color: rgba(210, 65, 65, 0.57);
+    right: 15px;
+}
+
+/* 选中菜单时的背景样式 */
+.menu .menu-item a:hover,
+.menu-item-active a {
+    background: rgba(238, 238, 238, 0.56)
+    border-radius: 5px;
+}
+
+/* 菜单栏一行两个菜单按钮 */
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 101%;
+    margin: 0;
+}
+.site-nav li {
+    width: 50%;
+}
+
+/* -----------end：菜单栏相关---------- */
+
+
+/* -----------start：侧边栏相关---------- */
+
+/* 侧边栏样式 */
+.sidebar-inner {
+    top: 0;
+}
+
+/* 侧边栏的图标 */
+.links-of-author-item .fas,
+.links-of-author-item .far,
+.links-of-author-item .fab {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* 友链样式 */
+.links-of-blogroll-item {
+    padding: 0;
+    line-height: 1.5;
+}
+.links-of-blogroll-item a {
+  color: #fc6423;
+  border-bottom: 0;
+  &:hover {
+    color: #0593d3;
+    text-decoration: underline;
+  }
+}
+
+/* -----------end：侧边栏相关---------- */
+
+
+/* -----------start：文章相关---------- */
+
+/* 文章内部、底部的超链 */
+.post-body p a,
+.post-body li a,
+.post-footer p a,
+.post-footer li a {
+  color: #0593d3;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+
+/* 文章底部的导航链接 */
+.post-nav a {
+    color: #2a80a7;
+    &:hover {
+        color: #a166ab;
+	text-shadow: 1px 1px 3px rgba(204, 24, 226, 0.49);
+    }
+}
+
+/* 文章目录超链样式 */
+/* 文本左端对齐 */
+.post-toc .nav-item {
+    text-align: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/* 子目录字体大小 */
+.post-toc .nav .nav-child {
+    font-size: .9em;
+}
+
+/* 行内代码块 */
+code {
+    color: #d500fc;
+    background: rgba(78, 240, 233, 0.42);
+    margin: 0 4px;
+    font-size: .9em;
+    border: 1px solid #d6d6d6;
+}
+
+/* 预格式代码块(用tab键插入的代码块) */
+pre code {
+    margin: 0;
+    border: none;
+    font-size: 1em;
+}
+
+/* 代码块顶部样式 */
+.highlight figcaption {
+    margin: 0em;
+    padding: 0.5em;
+    background: #eee;
+    color: #2d2d2d;
+    border-bottom: 1px solid #e9e9e9;
+}
+.highlight figcaption a {
+    color: #5073b8;
+}
+
+/* 代码块的diff样式 */
+/* 添加的行代码样式 */
+pre .addition {
+    background: #c7ffd7;
+    color: #2d2d2d;
+}
+/* 删除的行代码样式 */
+pre .deletion {
+    background: #ffd3d8;
+    color: #2d2d2d;
+}
+
+/* 引用块样式 */
+blockquote {
+    padding: 1px 16px 1px 16px;
+    border-left: 8px solid #DDDFE4;
+    color: #999;
+    font-size: 1em;
+    background: #EEF0F4;
+}
+blockquote p {
+    margin: 20px 0 20px 0;
+    line-height: 2;
+}
+
+/* 主题自带的cq引用块样式 */
+.blockquote-center {
+    color: #d9534f;
+    background: white;
+}
+.blockquote-center p {
+    text-align: center !important;
+}
+
+/* 段落添加顶部间距，tab标签里的段落除外 */
+p {
+    margin-top: 20px;
+}
+.tabs p {
+    margin-top: 0;
+}
+
+/* 缩小文章摘要里标题和正文的间距 */
+.posts-expand .post-meta {
+    margin: 3px 0 30px 0;
+}
+
+/* 设置文章摘要里的图片的最大宽度 */
+section .post-body .fancybox img {
+    max-width: 70%;
+}
+
+/* 文章摘要里的标签样式 */
+.post-footer-index {
+    margin-top: 35px;
+    border-top: 1px solid #bdbfc5;
+}
+.post-footer-index .post-tags {
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* 文章摘要里的阅读全文按钮 */
+.post-footer-index .post-button {
+    margin-top: 25px;
+}
+.post-footer-index .post-button a:hover {
+    border-color: #fff;
+    background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+
+/* 文章底部标签样式 */
+.post-tags a {
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 3px;
+    border-bottom: none;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    &:hover {
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.26);
+    }
+}
+
+/* 文章底部标签的颜色 */
+.post-tags a:nth-child(11n+1) {
+    background:#8bc34a;
+}
+.post-tags a:nth-child(11n+2) {
+    background:#673ab7;
+}
+.post-tags a:nth-child(11n+3) {
+    background:#ff9800;
+}
+.post-tags a:nth-child(11n+4) {
+    background:#f44336;
+}
+.post-tags a:nth-child(11n+5) {
+    background:#00abc0;
+}
+.post-tags a:nth-child(11n+6) {
+    background:#2196f3;
+}
+.post-tags a:nth-child(11n+7) {
+    background:#c3ba4a;
+}
+.post-tags a:nth-child(11n+8) {
+    background:#c38d4a;
+}
+.post-tags a:nth-child(11n+9) {
+    background:#b1b097;
+}
+.post-tags a:nth-child(11n+10) {
+    background:#c34a50;
+}
+.post-tags a:nth-child(11n+11) {
+    background:#e465a6;
+}
+
+/* 文章标题(h2,h3)样式 */
+.post-header .post-title {
+    color: #1f7e96;
+}
+.post-body h2 {
+    background: #2B6695;
+    border-radius: 6px 6px 6px 6px;
+    border: none;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family:"微软雅黑", "宋体", "黑体", Arial;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 18px 0 18px -10px !important;
+    padding: 10px;
+    text-shadow: 2px 2px 3px #222222;
+}
+.post-body h3 {
+    background: #2B6600;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 12px 0 12px -3px !important;
+    padding: 5px 10px 3px 10px;
+    text-shadow: 2px 2px 3px #222222;
+}
+/* 标题里的代码块样式 */
+.post-body h2 code,
+.post-body h3 code {
+    font-size: inherit;
+    color: #f7ab01;
+    background: transparent;
+    border: none;
+}
+
+/* 段落文本样式 */
+.post-body p {
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* -----------end：文章相关---------- */
