@@ -1,59 +1,54 @@
-# hexo-theme-beep
-A simple theme based on NexT-Gemini for hexo. 一款基于NexT-Gemini主题设计的hexo主题。
-
 # lewky.github.io
 [README](https://github.com/lewky/lewky.github.io/blob/dev/README.md) | [中文文档](https://github.com/lewky/lewky.github.io/blob/dev/README_zh.md)
 
-It's a repository for my hexo blog and you can access my blog by :zap: https://lewky.github.io/
+这是我的hexo博客代码仓库，你可以通过 :zap: https://lewky.github.io/ 来访问我的博客。
 
 ![blog_display](https://raw.githubusercontent.com/lewky/markdownImages/master/resource/blog/blog_display.jpg)
 
-There are two branch in this repository :
+本仓库存在两个分支：
 * master
 * dev
 
-**master** branch is deployed by github pages;  
-**dev** branch is an empty hexo blog with my own custom NexT theme. 
+**master** 分支用来部署 github pages;  
+**dev** 分支是使用了我自己定制的NexT主题的一个空的hexo博客，你可以通过克隆该dev分支来得到一个新的不包含任何文章(hello-world文章除外)的hexo博客。
 
-You can clone dev branch to get my hexo blog without posts except hello-world.md.
+## 使用步骤
 
-## How to play
-
-1. create a folder for your blog site and open `git bash` in this folder path, then clone dev branch:
+1. 创建一个文件夹作为你的博客站点根目录，在该目录下打开 `git bash` 并使用下边的命令克隆dev分支：
 ```bash
 git clone -b dev https://github.com/lewky/lewky.github.io.git ./
 ```
 
-2. install dependencies(please confirm you have installed Node.js, Git & Hexo in your computer, and it will spend much time on this step, please wait a minute):
+2. 接着安装项目依赖(请确保已经安装了Node.js，Git和Hexo，另外该步骤会耗时较久，请耐心等待) :
 ```bash
 npm install
 ```
 
-3. deploy your blog in local:
+3. 在本地部署站点进行调试:
 ```bash
 hexo clean
 hexo g
 hexo s
 ```
 
-4. deploy your blog in Github Pages after configuring your personal configuration:
+4. 在配置好相关的配置后，通过以下命令将个人博客远程部署到 `GitHub Pages` 上：
 ```bash
 hexo clean
 hexo g -d
 ```
 
-You can refer to [README.md](https://github.com/lewky/hexo-blog-demo) in my another repository to complete your hexo blog.
+你可以参考我另一个GitHub仓库的 [README.md](https://github.com/lewky/hexo-blog-demo) 来进一步了解完善你的Hexo博客。
 
-## Custom NexT theme
+## NexT主题个性化
 
-This theme is based on `NexT-Gemini` theme, most of css/js code with comments is in: 
+本博客的主题基于 `NexT-Gemini` 主题, 大部分css代码和注释都在下面的文件中：
 
 1. `themes/next/source/css/_custom/custom.styl`
 2. `themes/next/source/js/src/custom.js`
 3. `themes/next/layout/_partials/head/custom-head.swig`
 4. `themes/next/layout/_custom/custom-foot.swig`
 
-## Features
+## 自定义主题特色
 
 ### 头像相关
 

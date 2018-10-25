@@ -1,0 +1,132 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Someone' Blog
+subtitle: 'Hello World!'
+description: 'Hello World!'
+keywords: Someone
+author: Someone
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+# permalink: :year/:month/:day/:title/
+# permalink_defaults:
+permalink: posts/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+# 写作相关设置
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+# 代码高亮设置
+  enable: true
+  line_number: true
+  auto_detect: false
+# 将tab替换成四个空格
+  tab_replace: '    '
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+# 首页页面的分页设置
+# path：为博客的index页面设置根目录，默认是''
+# per_page：每页展示多少文章，设置为0可以取消分页
+# oreder_by：文章的排序规则，默认按照日期递减排序，即最新的排在前边
+index_generator:
+  path: ''
+  per_page: 5
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+## 这里的分页只影响到archives页面的文章数目
+## 设置成0可以取消分页
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo:
+    # 请将这里的username改为你的用户名，比如你的GitHub用户名是lewis,这里的url就应该是如下：
+    # git@github.com:lewis/lewis.github.io.git,master
+    github: git@github.com:username/username.github.io.git,master
+    #coding: git@git.coding.net:username/username.git,master
+
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+
+lazyload:
+  enable: true 
+  onlypost: true
+  #loadingImg: #如果不填写图片则使用默认的图片 eg /images/loading.gif
+  loadingImg: /images/loading/loading_2.gif
