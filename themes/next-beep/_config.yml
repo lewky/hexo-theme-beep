@@ -107,9 +107,9 @@ index_with_subtitle: false
 menu:
   home: / || fas fa-home
   archives: /archives/ || fas fa-archive
-  categories: /categories/ || fas fa-th
-  tags: /tags/ || fas fa-tags
-  about: /about/ || fas fa-user
+  #categories: /categories/ || fas fa-th
+  #tags: /tags/ || fas fa-tags
+  #about: /about/ || fas fa-user
   #schedule: /schedule/ || fas fa-calendar
   #sitemap: /sitemap.xml || fas fa-sitemap
   #commonweal: /404/ || fas fa-heartbeat
@@ -156,8 +156,6 @@ social:
   #Skype: skype:yourname?call|chat || fab fa-skype
   #CSDN: https://blog.csdn.net/yourname || fab fa-cuttlefish
   #博客园: http://www.cnblogs.com/yourname || fas fa-book
-  站点首页: / || fas fa-home
-  建站日志: /posts/e62c38c4.html || fas fa-cog fa-spin
 
 social_icons:
   enable: true
