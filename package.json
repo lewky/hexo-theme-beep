@@ -1,25 +1,38 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": "3.7.1"
+  "name": "hexo-theme-next",
+  "version": "5.1.4",
+  "description": "Elegant theme for Hexo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   },
-  "dependencies": {
-    "hexo": "^3.2.0",
-    "hexo-abbrlink": "^2.0.5",
-    "hexo-deployer-git": "^0.3.1",
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-index-pin-top": "^0.2.2",
-    "hexo-generator-searchdb": "^1.0.8",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-lazyload-image": "^1.0.3",
-    "hexo-neat": "^1.0.4",
-    "hexo-renderer-ejs": "^0.3.0",
-    "hexo-renderer-marked": "^0.3.0",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
-    "hexo-wordcount": "^3.0.2"
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iissnan/hexo-theme-next.git"
+  },
+  "keywords": [
+    "NexT",
+    "Hexo"
+  ],
+  "author": "iissnan <iissnan@gmail.com>",
+  "maintainers": [
+    "Ivan Nginx <ivan.nginx@gmail.com> (https://almostover.ru)"
+    ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iissnan/hexo-theme-next/issues"
+  },
+  "homepage": "https://theme-next.iissnan.com",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-shell": "^0.6.1",
+    "js-yaml": "^3.8.1",
+    "jshint-stylish": "^2.1.0",
+    "stylint": "^1.5.9"
   }
 }

@@ -1,22 +1,20 @@
-# default
 .DS_Store
-Thumbs.db
-db.json
+.idea/
 *.log
+*.iml
+yarn.lock
+package-lock.json
 node_modules/
-public/
-.deploy*/
 
-# source
-source/_posts/*
-!source/_posts/hello-world.md
-!source/_posts/siting_log.md
-source/_drafts
-source/images/posts
-source/high
+# Ignore unused verdors' files
+source/lib/fancybox/*
+!source/lib/fancybox/source/
 
-# scaffolds
-scaffolds/*
-!scaffolds/draft.md
-!scaffolds/page.md
-!scaffolds/post.md
+source/lib/font-awesome/less/
+source/lib/font-awesome/scss/
+
+source/lib/ua-parser-js/*
+!source/lib/ua-parser-js/dist/
+
+source/lib/Han/*
+!source/lib/Han/dist/
