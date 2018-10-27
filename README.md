@@ -7,16 +7,11 @@ It's a repository for my hexo theme and you can access my theme by :zap: https:/
 
 ![blog_display](https://raw.githubusercontent.com/lewky/markdownImages/master/resource/blog/blog_display.jpg)
 
-* You can clone master branch to get beep theme blog without posts except hello-world.md. Please see <a href="#Clone the whole blog repository with beep theme">#Clone the whole blog repository with beep theme</a>
-~~* You also can only clone `themes/beep` to get beep theme into your local blog repository. Please see <a href="#Clone beep theme into blog repository">#Clone beep theme into blog repository</a>~~
-
 ## How to play
 
-### Clone the whole blog repository with beep theme
-
-1. create a folder for your blog site and open `git bash` in this folder path, then clone dev branch:
+1. open `git bash` in your bolg site folder path, then clone master branch:
 ```bash
-git clone -b master https://github.com/lewky/hexo-theme-beep ./
+git clone -b master https://github.com/lewky/hexo-theme-beep themes/beep
 ```
 
 2. install dependencies(please confirm you have installed Node.js, Git & Hexo in your computer, and it will spend much time on this step, please wait a minute):
@@ -24,14 +19,22 @@ git clone -b master https://github.com/lewky/hexo-theme-beep ./
 npm install
 ```
 
-3. deploy your blog in local:
+3. change your blog theme to beep in `_config.yml`:
+```
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: beep
+```
+
+4. deploy your blog in local:
 ```bash
 hexo clean
 hexo g
 hexo s
 ```
 
-4. deploy your blog in Github Pages after configuring your personal configuration:
+5. deploy your blog in Github Pages after configuring your personal configuration:
 ```bash
 hexo clean
 hexo g -d
@@ -61,6 +64,7 @@ This theme is based on `NexT-Gemini` theme, most of css/js code with comments is
 ### 图片相关
 
 * 去掉(难看的)图片边框
+* 背景图片轮播
 
 ### 字体相关
 

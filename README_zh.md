@@ -7,16 +7,11 @@ A simple theme based on NexT-Gemini for hexo. 一款基于NexT-Gemini主题设�
 
 ![blog_display](https://raw.githubusercontent.com/lewky/markdownImages/master/resource/blog/blog_display.jpg)
 
-* 你可以通过克隆该master分支来得到一个新的不包含任何文章(hello-world文章除外)的beep主题博客。
-~~* 你也可以只克隆`themes\beep`文件到你的博客仓库来获取beep主题。~~
-
 ## 使用步骤
 
-### 克隆完整的beep主题博客
-
-1. 创建一个文件夹作为你的博客站点根目录，在该目录下打开 `git bash` 并使用下边的命令克隆dev分支：
+1. 在你的博客站点根目录下打开 `git bash` 并使用下边的命令克隆master分支：
 ```bash
-git clone -b master https://github.com/lewky/hexo-theme-beep ./
+git clone -b master https://github.com/lewky/hexo-theme-beep themes/beep
 ```
 
 2. 接着安装项目依赖(请确保已经安装了Node.js，Git和Hexo，另外该步骤会耗时较久，请耐心等待) :
@@ -24,14 +19,22 @@ git clone -b master https://github.com/lewky/hexo-theme-beep ./
 npm install
 ```
 
-3. 在本地部署站点进行调试:
+3. 将博客根目录下的`_config.yml`的theme改为`beep`:
+```
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: beep
+```
+ 
+4. 在本地部署站点进行调试:
 ```bash
 hexo clean
 hexo g
 hexo s
 ```
 
-4. 在配置好相关的配置后，通过以下命令将个人博客远程部署到 `GitHub Pages` 上：
+5. 在配置好相关的配置后，通过以下命令将个人博客远程部署到 `GitHub Pages` 上：
 ```bash
 hexo clean
 hexo g -d
@@ -61,6 +64,7 @@ hexo g -d
 ### 图片相关
 
 * 去掉(难看的)图片边框
+* 背景图片轮播
 
 ### 字体相关
 
