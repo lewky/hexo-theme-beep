@@ -5,6 +5,8 @@
 yarn.lock
 package-lock.json
 node_modules/
+public/
+.deploy_git/
 
 # Ignore unused verdors' files
 source/lib/fancybox/*
