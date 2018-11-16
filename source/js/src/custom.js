@@ -35,10 +35,14 @@ jQuery(document).ready(function($) {
         $i.css({
             "z-index": 9999,
             "top": y - 20,
-            "left": x + 1,
+            "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": randomColor()
+            "color": randomColor(),
+			"-webkit-user-select": "none",
+			"-moz-user-select": "none",
+			"-ms-user-select": "none",
+			"user-select": "none"
         });
         $("body").append($i);
         $i.animate({
@@ -216,7 +220,7 @@ window.onload = function() {
       document.title = '喔唷，崩溃啦！';
       clearTimeout(titleTime);
     } else {
-      $('[rel="icon"]').attr('href', "/favicon-16x16.ico");
+      $('[rel="icon"]').attr('href', "/favicon-32x32.ico");
       $('[rel="shortcut icon"]').attr('href', "/favicon-32x32.ico");
       document.title = '咦，页面又好了！';
       titleTime = setTimeout(function() {
